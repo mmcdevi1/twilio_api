@@ -1,5 +1,5 @@
 .widget
-  %img(src="/assets/logo.png")
+  = image_tag "logo.png"
   %h4 Enter your information to receive a text message
   = form_for @user do |f|
     / - if @user.errors.any?
