@@ -10,6 +10,152 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require bootstrap_and_overrides
  *= require_tree .
  *= require_self
  */
+
+ @font-face{
+    font-family:'AvenirLT-Medium';
+    src:url('/assets/avenirlt-medium.eot');
+    src:url('/assets/avenirlt-medium.eot?#iefix') format("embedded-opentype"),
+        url('/assets/avenirlt-medium.woff') format("woff"),
+        url('/assets/avenirlt-medium.ttf') format("truetype")
+}
+@font-face{
+    font-family:'AvenirLT-Black';
+    src:url('/assets/avenirlt-black.eot');
+    src:url('/assets/avenirlt-black.eot?#iefix') format("embedded-opentype"),
+        url('/assets/avenirlt-black.woff') format("woff"),
+        url('/assets/avenirlt-black.ttf') format("truetype")
+}
+* {
+  outline: none !important;
+}
+body {
+  font-family:'AvenirLT-Medium';
+  background: #42c4de;
+}
+form p {
+  margin: 0;
+}
+.navbar-brand {
+  font-family:'AvenirLT-Black';
+  color: #009CBA;
+}
+.navbar-brand:hover {
+  color: #009CBA;
+}
+.widget {
+  background: #fff;
+  padding:30px;
+  border-radius: 3px;
+  text-align: center;
+  width:360px;
+  margin: 0 auto;
+  position: relative;
+  border-bottom: 2px solid #21A7D1;
+}
+.widget h4 {
+  color: #4f5965;
+  margin: 30px 0;
+}
+.form-control {
+  border: 2px solid #d0d9e2;
+  box-shadow: none;
+  height: 50px;
+}
+.form-control:hover {
+  border: 2px solid #A2ACB5;
+}
+.btn {
+  border-radius: 2px;
+}
+.btn-lg {
+  padding: 13px 16px 10px 16px;
+}
+.alert {
+  position:absolute;
+  top:0;
+  left:0;
+  border-radius:0px;
+  width:100%;
+  border:none;
+  text-align: center;
+}
+.alert-info {
+  background: rgb(33, 167, 209);
+  color: #D2F8FF;
+}
+.field_with_errors input {
+  border:2px solid rgb(255, 128, 128);
+}
+#error_explanation {
+  text-align: left;
+  color: rgb(255, 128, 128);
+}
+#phone_number_tooltip {
+  background: #fff;
+  width:300px;
+  padding: 30px;
+  border-radius: 5px;
+  position:absolute;
+  top:200px;
+  left:380px;
+  border-bottom: 2px solid #21A7D1;
+  text-align: left;
+}
+#phone_number_tooltip:after,
+#name_tooltip:after {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-right-color: #fff;
+  border-width: 8px;
+  margin-top: -8px;
+}
+#name_tooltip {
+  background: #fff;
+  width:300px;
+  padding: 30px;
+  border-radius: 5px;
+  position:absolute;
+  top:140px;
+  left:380px;
+  border-bottom: 2px solid #21A7D1;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

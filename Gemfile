@@ -14,6 +14,8 @@ gem 'bcrypt-ruby'
 gem 'faker'
 gem 'paperclip'
 gem 'bootstrap_form'
+gem 'twilio-ruby'
+gem 'therubyracer'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'

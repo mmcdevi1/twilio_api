@@ -1,0 +1,20 @@
+.widget
+  %img(src="/assets/logo.png")
+  %h4 Enter your information to receive a text message
+  = form_for @user do |f|
+    / - if @user.errors.any?
+    /   #error_explanation
+    /     = pluralize(@user.errors.count, "error")
+    /     prohibited this form to be saved.
+    /     %ul
+    /       - @user.errors.full_messages.each do |message|
+    /         %li= message
+    .form-group
+      = f.text_field :name, class: "form-control", placeholder: "Your name"
+      #name_tooltip
+        This field is required.
+    .form-group
+      = f.text_field :phone, class: "form-control", placeholder: "Your phone number"
+      #phone_number_tooltip
+        Please enter your 10 digit phone number without special characters.
+    = f.submit "Send SMS", class: "btn btn-info btn-block btn-lg"

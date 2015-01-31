@@ -15,3 +15,29 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .
+var a = function() {
+  
+  // Fade out alerts
+  setTimeout(function () {
+    $('.alert').fadeOut('slow');
+  }, 1000);
+
+  $("#phone_number_tooltip").hide();
+  $("#name_tooltip").hide();
+
+  $("#user_phone").mouseover(function() {
+    $("#phone_number_tooltip").show();
+  }).mouseleave(function() {
+    $("#phone_number_tooltip").hide();
+  });
+
+  $("#user_name").mouseover(function() {
+    $("#name_tooltip").show();
+  }).mouseleave(function() {
+    $("#name_tooltip").hide();
+  });
+
+
+}
+$(document).ready(a);
+$(document).on('page:load', a);
