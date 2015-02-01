@@ -10,10 +10,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem "twitter-bootstrap-rails"
-gem 'bcrypt-ruby'
-gem 'faker'
-gem 'paperclip'
-gem 'bootstrap_form'
 gem 'twilio-ruby'
 gem 'therubyracer'
 
